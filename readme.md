@@ -1,14 +1,14 @@
-# TESTE DE ESTÁGIO BACK-END PHP, MYSQL, HTML, CSS E JAVASCRIPT
+# Teste de estágio back-end php, mysql, html, css e javascript
 
 # REGRAS
- - ORIENTAÇÃO A OBJETOS.
- - INDENTAÇÃO E COMENTÁRIOS (CASO PRECISE).
- - CRIAÇÃO DO BANCO DE DADOS.
- - CRIAR CRUD (VISUALIZAR, CADASTRAR, ALTERAR E EXCLUIR).
+ - Orientação a objetos.
+ - Indentação e comentários (caso precise).
+ - Criação do banco de dados.
+ - Criar crud (visualizar, cadastrar, alterar e excluir).
 
 # CENÁRIO
 
- - UM CLIENTE PRECISA EM SEU PAINEL DE CONTROLE UM MÓDULO SIMPLES DE CADASTRO DE PRODUTO, EM QUE CADA PRODUTO ESTAR RELACIONADO A UMA TABELA CHAMADA 'CATEGORIAS' (SCRIPT DA TABELA CATEGORIA ESTÁ ABAIXO) :
+ - Um cliente precisa em seu painel de controle um módulo simples de cadastro de produto, em que cada produto estar relacionado a uma tabela chamada 'categorias' (script da tabela categoria está abaixo) :
  ```sh
    CREATE TABLE `categorias` (
   `id` INT(11) NOT NULL AUTO_INCREMENT,
@@ -24,9 +24,9 @@
 
 
 # DEVERES
- - TELA DE CADASTRO DE PRODUTOS (LISTAR, EDITAR E EXCLUIR).
- - CRIAR A TABELA DE PRODUTOS COM OS SEGUINTES CAMPOS => (id, categoria_id, nome, preço).
- - CASO NECESSÁRIO UTILIZE JAVASCRIPT NO LAYOUT, SERÁ UM DIFERENCIAL.
+ - Tela de cadastro de produtos (listar, editar e excluir).
+ - Criar a tabela de produtos com os seguintes campos => (id, categoria_id, nome, preço).
+ - Caso necessário utilize javascript no layout, será um diferencial.
 
 # CONCLUSÃO
-- APÓS FINALIZAR SOLICITE UM PULL REQUEST NESSE REPOSITÓRIO OU ENVIE UM E-MAIL PARA contato@bredi.com.br COM OS SEUS DADOS.
+- Após finalizar solicite um pull request nesse repositório ou envie um e-mail para contato@bredi.com.br com os seus dados.
