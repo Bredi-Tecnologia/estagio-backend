@@ -1,14 +1,14 @@
-# Teste de estágio back-end php, mysql, html, css e javascript
+# Teste de estágio back-end PHP, MYSQL, HTML, CSS e JAVASCRIPT
 
-# REGRAS
+# Regras
  - Orientação a objetos.
  - Indentação e comentários (caso precise).
  - Criação do banco de dados.
  - Criar crud (visualizar, cadastrar, alterar e excluir).
 
-# CENÁRIO
+# Cenário
 
- - Um cliente precisa em seu painel de controle um módulo simples de cadastro de produto, em que cada produto estar relacionado a uma tabela chamada 'categorias' (script da tabela categoria está abaixo) :
+ - Um cliente precisa em seu painel de controle um módulo simples de cadastro de produto, em que cada produto está relacionado a uma tabela chamada 'categorias' (script da tabela categoria está abaixo) :
  ```sh
    CREATE TABLE `categorias` (
   `id` INT(11) NOT NULL AUTO_INCREMENT,
@@ -23,10 +23,10 @@
  ```
 
 
-# DEVERES
+# Deveres
  - Tela de cadastro de produtos (listar, editar e excluir).
  - Criar a tabela de produtos com os seguintes campos => (id, categoria_id, nome, preço).
  - Caso necessário utilize javascript no layout, será um diferencial.
 
-# CONCLUSÃO
+# Conclusão
 - Após finalizar solicite um pull request nesse repositório ou envie um e-mail para contato@bredi.com.br com os seus dados.
