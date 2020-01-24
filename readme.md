@@ -8,7 +8,7 @@
 
 # Cenário
 
- - Um cliente precisa em seu painel de controle um módulo simples de cadastro de produto, em que cada produto está relacionado a uma tabela chamada 'categorias' (script da tabela categoria está abaixo) :
+ - Um cliente precisa em seu painel de controle um módulo simples de cadastro de produto, em que cada produto está relacionado a uma tabela chamada 'categorias' (script da tabela categorias está abaixo) :
  ```sh
    CREATE TABLE `categorias` (
   `id` INT(11) NOT NULL AUTO_INCREMENT,
