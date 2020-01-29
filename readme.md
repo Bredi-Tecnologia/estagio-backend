@@ -1,5 +1,10 @@
 # Teste de estágio back-end PHP, MYSQL, HTML, CSS e JAVASCRIPT
 
+# IMPORTANTE
+```sh 
+Prazo de entrega: 10/02/2020
+```
+
 # Regras
  - Orientação a objetos.
  - Indentação e comentários (caso precise).
