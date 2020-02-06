@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/605b2409fd.js" crossorigin="anonymous"></script>
+    <title>Cadastro Produtos</title>
+</head>
+<body>
+
+<div class="container p-5 shadow-lg mt-5">
+    <button id = "teste" type = "button" class="btn btn-primary my-3" data-toggle="modal" data-target="#addModal">Adicionar Produto</button>
+    <form class="form-inline d-flex justify-content-end m-2">
+      <input class="form-control" id = "buscaInput" type="search" onkeyup="buscar(this)" placeholder="Pesquisar por nome">
+    </form>
+    <p id = "resultadoAcao" ></p>
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Categoria</th>
+                <th scope="col">Preço</th>
+                <th class = "text-right pr-5" scope="col">Ações</th>
+            </tr>
+        </thead>
+        <tbody id = "todosProdutos">
+        </tbody>
+        <tbody id = "buscaProdutos">
+        </tbody>
+    </table>
+
+    <div class="modal fade" id="addModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Por favor, preencha todos os campos.</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form method="POST" id = "addForm">
+                        <div class="form-group">
+                            <label for="nomeInput">Nome do produto</label>
+                            <input type="text" class="form-control" id = "addNomeInput" name="nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="precoInput">Preço do produto</label>
+                            <input type="number" class="form-control" id = "addPrecoInput" min = "0" step="0.01" name="preco" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="categoriaInput">Categoria</label>
+                            <select class="form-control" id = "addCategoriaInput" name="categoria" required>
+                                <option value="2" selected>Eletrodomésticos</option>
+                                <option value="3">Celulares</option>
+                                <option value="4">Alimentos</option>
+                                <option value="5">Informática</option>
+                            </select>
+                        </div>
+                        <div class="form-group text-right">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                            <button id = "addSubmit" type="submit" class="btn btn-success">Adicionar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="editModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Por favor, preencha todos os campos.</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form method="POST" id = "editForm">
+                        <div class="form-group">
+                            <label for="nomeInput">Nome do produto</label>
+                            <input type="text" class="form-control" id = "editNomeInput" name="nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="precoInput">Preço do produto</label>
+                            <input type="number" class="form-control" id = "editPrecoInput" min="0" step="0.01" name="preco" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="categoriaInput">Categoria</label>
+                            <select class="form-control categoriaInput" id = "editCategoriaInput" name="categoria" required>
+                                <option value="2" selected>Eletrodomésticos</option>
+                                <option value="3">Celulares</option>
+                                <option value="4">Alimentos</option>
+                                <option value="5">Informática</option>
+                            </select>
+                        </div>
+                        <div class="form-group text-right">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                            <button id = "editSubmit" type="submit" class="btn btn-success">Editar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

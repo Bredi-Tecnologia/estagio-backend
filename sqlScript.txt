@@ -1,0 +1,24 @@
+CREATE DATABASE db_cadastro;
+
+CREATE TABLE `categorias` (
+	`id` INT(11) NOT NULL AUTO_INCREMENT,
+    `titulo` VARCHAR(190) NOT NULL,
+    PRIMARY KEY(`id`)
+)
+ENGINE = InnoDB;
+
+CREATE TABLE `produtos` (
+    `id` INT (11) NOT NULL AUTO_INCREMENT,
+    `categoria_id` INT (11) NOT NULL,
+    `nome` VARCHAR(190) NOT NULL,
+    `preco` DECIMAL (10,2) NOT NULL,
+    PRIMARY KEY (`id`),
+    CONSTRAINT `fk_categorias_produtos`
+    FOREIGN KEY (`categoria_id`) REFERENCES `categorias` (`id`)
+)
+ENGINE = InnoDB;
+
+INSERT INTO `categorias` (`id`, `titulo`) VALUES (4, 'Alimentos');
+INSERT INTO `categorias` (`id`, `titulo`) VALUES (5, 'Informática');
+INSERT INTO `categorias` (`id`, `titulo`) VALUES (2, 'Eletrodomésticos');
+INSERT INTO `categorias` (`id`, `titulo`) VALUES (3, 'Celulares');

@@ -1,0 +1,45 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.fa-edit {
+  color: rgb(241, 161, 13);
+}
+
+.fa-trash-alt {
+  color: rgb(214, 2, 2);
+}
+
+a {
+  cursor:pointer;
+}
+
+.addSucesso {
+  padding: 15px;
+  color: rgb(6, 107, 6);
+  font-size: 1.25rem;
+  background-color: rgb(186, 253, 186);
+}
+
+@media (max-width: 650px) 
+{
+  .container {
+    display: inline;
+    padding: 0 !important;
+    margin: 0 !important; 
+   }
+   
+}
+
+@media (max-width: 450px) 
+{
+    body {
+        padding: 5px;
+    }
+  tr, th, td {
+    padding: 0 !important;
+    margin: 0 !important; 
+   }
+   
+}
