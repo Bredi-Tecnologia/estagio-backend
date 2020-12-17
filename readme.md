@@ -2,7 +2,7 @@
 
 # IMPORTANTE
 ```sh 
-Prazo de entrega: 5/10/2020
+Prazo de entrega: 23/12/2020
 ```
 
 # Regras
