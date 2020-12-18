@@ -1,4 +1,4 @@
-# Teste de estágio back-end PHP, MYSQL, HTML, CSS e JAVASCRIPT
+# Teste back-end PHP, MYSQL, HTML, CSS e JAVASCRIPT
 
 # IMPORTANTE
 ```sh 
